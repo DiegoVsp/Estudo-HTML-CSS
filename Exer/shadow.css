@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  height: 100vh;
+  width: 100%;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 40px rgba(78, 243, 141, 0.2), /*deslocamento eixo X / deslocamento eixo Y / esfumaçamento da sombra/ tamanho da sombra*/
+              0 0 0 80px rgba(78, 243, 78, 0.2),
+              0 0 0 120px rgba(78, 243, 78, 0.2),
+              0 0 0 160px rgba(78, 243, 78, 0.2),
+              0 0 0 180px rgba(78, 243, 78, 0.1);
+}

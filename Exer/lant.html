@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanterna</title>
+  <style>
+
+    
+    .circle {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #3c404f;
+      background: linear-gradient(to right, var(--color1), var(--color2), var(--color1));
+      
+    }
+    #circle-1 {
+      margin: auto;
+      width: 256px;
+      height: 256px;
+
+      --color1:rgb(2, 82, 2);
+      --color2:white;
+    }
+    #circle-2 {
+      width: 206px;
+      height: 206px;
+
+      
+      --color1:lightgray;
+      --color2:white;
+    }
+    #quad {
+      position: relative;
+      width: 146px;
+      height: 146px;
+      
+      /* background-color: lightblue; */
+      
+    }
+    
+    #circle-3 {
+      width: 116px;
+      height: 106px;
+      /* background-color: green; */
+      position: absolute;
+      top: 14%;
+      left: 10%;      
+      border-right: 1px solid #3c404f;
+      border-left: 1px solid #3c404f;
+     
+      
+      --color1:rgb(2, 82, 2);
+      --color2:white;
+      
+    }
+    #b1 {
+      width: 116px;
+      height: 22px;
+      
+      position: absolute;
+      left: 10%;      
+      top: 1%;
+      border: 1px solid #3c404f;
+      border-bottom: 1px solid transparent;
+      z-index: 2;
+      --color1:rgb(2, 82, 2);
+      --color2:white;
+      background: linear-gradient(to right, var(--color1), var(--color2), var(--color1));
+    }
+    #b2 {
+      width: 116px;
+      height: 22px;
+      
+      position: absolute;
+      left: 10%;      
+      bottom:1%;
+      border: 1px solid #3c404f;
+      border-top:1px solid transparent;
+      --color1:rgb(2, 82, 2);
+      --color2:white;
+      background: linear-gradient(to right, var(--color1), var(--color2), var(--color1));
+
+    }
+    #circle-4 {
+      width: 56px;
+      height: 56px;
+      --color1:white;
+      --color2:white;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="circle-1" class="circle">
+    <div id="circle-2" class="circle">
+      <div id="quad">
+        <div id="b1"></div>
+        <div id="circle-3" class="circle">          
+          <div id="circle-4"class="circle"></div>          
+        </div>
+        <div id="b2"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

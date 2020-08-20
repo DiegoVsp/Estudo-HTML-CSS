@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center; /*coloca ao centro*/
+  height: 100vh;
+}
+#items-wrapper{
+  width: 100vw;
+}
+#items {
+  display: flex;
+
+  overflow-x: auto; /*barra rolagem em baixo da imagem*/
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  scroll-behavior: smooth;
+}
+.item {
+  flex: none;
+
+  width: 100%;
+  height: 400px;
+
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover; /*cobre toda visão de 30%*/
+
+}

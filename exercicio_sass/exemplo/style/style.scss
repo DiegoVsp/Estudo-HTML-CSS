@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./reset";
+
+// funções
+@function pesoFonte($chave) {
+  @return map-get($font, $chave);
+}
+
+// mixin
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+body {
+  background: #333;
+  
+  .container {
+    @include flexCenter(column);    
+
+    h1 {
+      color: $cor-primaria;
+      font-weight: pesoFonte(regular);
+    }
+  }
+}

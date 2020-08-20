@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB RESP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="logo">CREATIVE</div>
+    <img src="bg.jpg" alt="foto" class="bg">
+    <div class="content">
+      <h2>Let's Make<br>Something Creative</h2>
+      <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Delegadis gente finis, bibendum egestas augue arcu ut est. Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
+      <a href="#">Get Started</a>
+    </div>
+    <p class="copyrightText">&copy2020. Online Tutorials</p>
+  </section>   
+  <div class="menuToggle" onclick="menuToggle()"></div> 
+  <div class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="socialBar">
+      <ul>
+        <li><a href="#"><img src="facebook.png" alt=""></a>
+        </li>
+        <li><a href="#"><img src="twitter.png" alt=""></a>
+        </li>
+        <li><a href="#"><img src="instagram.png" alt=""></a>
+        </li>
+      </ul>
+      <a href="mailto:diego-vespa2020@outlook.com.br" class="emailBx"><img src="email.png" alt=""></a>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+
+  function menuToggle(){
+    var menuToggle = document.querySelector('.menuToggle');
+    var navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+  }
+  </script>
+</body>
+</html>
