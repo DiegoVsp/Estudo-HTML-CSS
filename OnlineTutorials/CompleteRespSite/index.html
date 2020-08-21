@@ -7,12 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <a href="#" class="logo">Portfolio</a>
+    <div class="toggle"></div>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Trabalho</a></li>
+      <li><a href="#">Depoimentos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
   <section class="banner">
     <div class="textBx">
-      <h2>Olá, Sou <br><span>Diego</span></h2>
+      <h2>Olá, Sou <br><span>Diego Vespa</span></h2>
       <h3>I'm Front-End Developer</h3>
       <a href="#" class="btn">Sobre</a>
     </div>
   </section>
+  <section class="about">
+    <div class="heading">
+      <h2>Sobre</h2>
+    </div>
+    <div class="content">
+      <div class="contentBx w50">
+        <h3>I'm Front-End Developer</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis veniam, explicabo corrupti minus laborum incidunt quibusdam asperiores nulla harum enim commodi. Illum tenetur ea quos error exercitationem enim aperiam commodi!</p>
+      </div>
+      <div class="w50">
+        <img src="./imgs/img1.jpg" alt="img">
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    window.addEventListener('scroll', () => {
+      var header = document.querySelector('header')
+      header.classList.toggle('sticky', window.scrollY > 0);
+    })
+  </script>
 </body>
 </html>

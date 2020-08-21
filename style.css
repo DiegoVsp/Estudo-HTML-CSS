@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn_hamb {
+  width: 60px;
+  height: 4px;
+  background: white;
+  box-shadow: 0px 2px 3px red;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.btn_hamb::after,
+.btn_hamb::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: white;
+  box-shadow: 0px 2px 3px red;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.btn_hamb::after{
+  transform: translateY(-16px);
+}
+.btn_hamb::before{
+  transform: translateY(16px);
+}
+
+.btn.open .btn_hamb {
+  transform: translateX(-50px);
+  box-shadow: none;
+  background: transparent;
+}
+.btn.open .btn_hamb::after{
+  transform: rotate(-45deg) translate(35px,35px);
+}
+.btn.open .btn_hamb::before{
+  transform: rotate(45deg) translate(35px,-35px);
+}

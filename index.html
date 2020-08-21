@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="btn">
+    <div class="btn_hamb">
+
+    </div>
+  </div>
+
+  <script>
+    let btn = document.querySelector('.btn')
+    let btnOpen = false;
+
+    btn.addEventListener('click', () => {
+      if(!btnOpen){
+        btn.classList.add('open');
+        btnOpen = true;
+      }else {
+        btn.classList.remove('open')
+        btnOpen= false;
+      }
+    })
+
+  </script>
+</body>
+</html>
