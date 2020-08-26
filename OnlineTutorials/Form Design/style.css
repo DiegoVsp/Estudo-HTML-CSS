@@ -68,6 +68,7 @@ body {
   transition: 0.5s;
   pointer-events: none;
 }
+/* pegando uma classe text que anterior a ela tenha um input */
 .container .row100 .inputBox input:focus + .text,
 .container .row100 .inputBox input:valid + .text {
   top: -35px;
