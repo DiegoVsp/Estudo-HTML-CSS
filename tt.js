@@ -45,14 +45,14 @@ var carroTunado2=new CarroTunado();
 carroTunado2.nome ="McLarem GT";
 carroTunado2.cor ="Amarelo";
 
-console.log('Nome do carro tunado 1'+carroTunado1.nome)
-console.log('Cor do carro tunado 1'+carroTunado1.cor)
+console.log('Nome do carro tunado 1 '+carroTunado1.nome)
+console.log('Cor do carro tunado 1 '+carroTunado1.cor)
 
-console.log('Nome do carro tunado 2'+carroTunado2.nome)
-console.log('Cor do carro tunado 2'+carroTunado2.cor)
+console.log('Nome do carro tunado 2 '+carroTunado2.nome)
+console.log('Cor do carro tunado 2 '+carroTunado2.cor)
 
 trocaAtributosCarro(carroTunado2)
 
-console.log('Nome do carro tunado 2'+carroTunado2.nome)
-console.log('Cor do carro tunado 2'+carroTunado2.cor)
+console.log('Nome do carro tunado 2 '+carroTunado2.nome)
+console.log('Cor do carro tunado 2 '+carroTunado2.cor)
 
