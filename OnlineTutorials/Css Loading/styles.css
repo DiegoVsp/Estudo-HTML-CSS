@@ -8,7 +8,7 @@ section{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #042;
+  background: #222;
 }
 section .loader {
   position: relative;
