@@ -13,10 +13,12 @@ body {
 .box {
   position: relative;
   border-top: 10px solid black;
-  height: 100%;
-  width: 480px;
+}
+.content {
   display: flex;
   justify-content: space-evenly;
+  min-width: 500px;
+  height: 100%;
 }
 .box .item {
   z-index: -1;
@@ -24,7 +26,7 @@ body {
   top: -2px;
   width: 4px;
   height: 400px;
-  background: linear-gradient(to bottom, gray,rgba(0, 0, 0, .9))
+  background: #333
 }
 .box .item:nth-child(1) {
   animation: animate 1s linear infinite;
