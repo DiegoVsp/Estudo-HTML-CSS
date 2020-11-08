@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #ebf5fc;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), /*cima dentro*/
+              inset -5px -5px 5px rgba(255,255,255,0.5), /*baixo dentro*/
+              5px 5px 5px rgba(0,0,0,0.05), /*baixo fora*/
+              -5px -5px 5px rgba(255,255,255,0.5); /*cima fora*/
+  border-radius: 15px;
+  margin: 30px;
+}
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 15px;  
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
