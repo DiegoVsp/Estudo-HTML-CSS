@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account Dropdown Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="action">
+    <div class="profile">
+      <img src="./img/perfil.jpg" alt="perfil">
+    </div>
+    <div class="menu">
+      <h3>Someone famous</br><span>Web Designer</span></h3>
+      <ul>
+        <li>
+          <img src="./img/profile.png" alt="userImg"><a href="#">My Profile</a>
+        </li>
+        <li>
+          <img src="./img/edit.png" alt="editImg"><a href="#">Edit Profile</a>
+        </li>
+        <li>
+          <img src="./img/envelope.png" alt="inboxImg"><a href="#">Inbox</a>
+        </li>
+        <li>
+          <img src="./img/settings.png" alt="settingsImg"><a href="#">Settings</a>
+        </li>
+        <li>
+          <img src="./img/question.png" alt="helpImg"><a href="#">Help</a>
+        </li>
+        <li>
+          <img src="./img/log-out.png" alt="logoutImg"><a href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    let profile = document.querySelector('.profile');
+    let menu = document.querySelector('.menu');
+
+    profile.addEventListener('click', () => {
+      menu.classList.toggle('ativo')
+    })
+    
+  </script>
+</body>
+
+</html>
