@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: #111;
+}
+
+a {
+  text-decoration: none;
+  transition: .4s;
+  color: #777;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+header .brand {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #F1F1F1
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+header ul li .active {
+  color: aqua;
+}
+
+.menu ul li a:hover {
+  color: aqua;
+}
+
+.social-media {
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+main {
+  /* background-color: red; */
+}
+
+main .content {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+main .content .card {
+  width: 360px;
+  height: 420px;
+  /* background-color:blue; */
+  margin: 10px;
+
+  border: 1px solid #777;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #444;
+}
+
+.content-card-1 {
+  background: #777;
+  background: url('./img/animais.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-2 {
+  background: #777;
+  background: url('./img/arquitetura.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-3 {
+  background: #777;
+  background: url('./img/cidade.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-4 {
+  background: #777;
+  background: url('./img/decoracao.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-5 {
+  background: #777;
+  background: url('./img/esportes.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-6 {
+  background: #777;
+  background: url('./img/natureza.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-7 {
+  background: #777;
+  background: url('./img/paisagem.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-8 {
+  background: #777;
+  background: url('./img/pessoas.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-9 {
+  background: #777;
+  background: url('./img/refeicoes.jpg') no-repeat center;
+  background-size: 100%;
+  filter: grayscale(50%);
+  transition: .6s;
+}
+
+.content-card-1:hover,
+.content-card-2:hover,
+.content-card-3:hover,
+.content-card-4:hover,
+.content-card-5:hover,
+.content-card-6:hover,
+.content-card-7:hover,
+.content-card-8:hover,
+.content-card-9:hover {
+  background-size: 110%;
+  cursor: pointer;
+}
+
+main .content .card a {
+  border: 2px solid #FFF;
+  padding: 8px 20px;
+  color: #FFF;
+  font-weight: bold;
+  transition: .4s;
+}
+
+main .content .card a:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
